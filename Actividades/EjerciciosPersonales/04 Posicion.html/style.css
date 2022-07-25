@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0%;
+}
+
+html {
+    font-size: 62.5%
+}
+
+:root {
+    --dark-gray: #404040;
+    --ash-gray: #cad2c5ff;
+    --maize-crayola: #e9c46aff;
+    --sandy-brown: #f4a261ff;
+    --burnt-sienna: #e76f51ff;
+
+    --sm: 14px;
+    --lg: 28px;
+}
+
+body {
+    background-color: var(--dark-gray);
+    font-family: "Quicksand", sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 50vh;
+    /* esto es para q no haya overflow... necesidad de scroll horizontal */
+}
+
+.title-box {
+    width: 35rem; 
+    height: 10rem;
+    background-color: var(--burnt-sienna);
+    border-radius: 15px;
+    color: var(--maize-crayola);
+    margin: auto;
+    /* lo anterior, alinea contenido en el centro */
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    /* con esto libero manera como ubico la caja */
+    top: 10rem;
+    /* la mayoría de medidas las saco con rem para q se escale con relación a un módulo conocido (10px). Para las fuentes sí preferí usar las variables q aprendí en otro curso */
+    font-size: var(--lg);
+    z-index: 2;
+}
+
+.content-box {
+    width: 50rem;
+    height: 35rem;
+    background-color: var(--sandy-brown);
+    border-radius: 45px;
+    color: var(--dark-gray);
+    margin: auto;
+    padding: 100px 30px 30px;    
+    position: relative;
+    top: 5rem;
+    font-size: var(--sm);
+    z-index: 1;
+}

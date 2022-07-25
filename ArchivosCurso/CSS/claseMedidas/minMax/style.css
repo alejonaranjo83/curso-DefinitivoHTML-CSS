@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: purple;
+}
+
+section {
+  width: 100%;
+  min-width: 320px;
+  max-width: 500px;
+  /* los dos anteriores controlan qué tanto crecen o decrecen dependiendo del tamaño de la pantalla */
+  height: 850px;
+  background-color: red;
+  margin: 0 auto;
+}

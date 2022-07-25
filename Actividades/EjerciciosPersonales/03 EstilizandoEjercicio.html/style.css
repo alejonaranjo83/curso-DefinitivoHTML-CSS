@@ -1,0 +1,93 @@
+:root {
+    --dark-gray: #404040;
+    --ash-gray: #cad2c5ff;
+    --persian-green: #2a9d8fff;
+    --maize-crayola: #e9c46aff;
+    --sandy-brown: #f4a261ff;
+    --burnt-sienna: #e76f51ff;
+
+    --sm: 14px;
+    --md: 16px;
+    --lg: 28px;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0%; 
+}
+    
+body {
+    background-color: var(--dark-gray);
+    font-family: "Quicksand", sans-serif;
+}
+
+.header {
+    margin: 50px;
+}
+
+.header h1 {
+    font-size: var(--lg);
+    color: var(--sandy-brown);
+    /* position: fixed; */
+}
+
+p {
+    font-size: var(--md);
+    color: var(--ash-gray);
+}
+
+main {
+    margin-left: 120px;
+}
+
+main h3 {
+    margin-top: 20px;
+    color: var(--ash-gray);
+    margin-bottom: 16px;
+}
+
+li {
+    font-size: var(--md);
+    list-style: none;
+}
+
+.ol li{
+    font-size: var(--sm);
+    margin-bottom: 24px;
+    color: var(--ash-gray);
+    list-style: decimal;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    /* con esto se organizarán automática/ en fxn del tamaño de la pantalla */
+    gap: 26px;
+    /* con "gap" separo las tarjetas entre sí */
+    place-content: center;
+    margin-top: 24px;
+}
+
+.product-card {
+    width: 200px;
+}
+.product-card img {
+    /* cuando le hago complementos como "img" lo q estoy haciendo,
+    es ser más específico sobre el tipo de elemento q quiero cambiar
+    dentro de una categoría determinada */
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    /* con la anterior evito q la imagen se deforme */
+}
+
+footer {
+    margin: 40px 20px 20px 0;
+    text-align: right;
+    font-size: --sm;
+    color: var(--burnt-sienna);
+}
+
